@@ -2,7 +2,7 @@ Necesitamos crear un formulario para el registro rápido del portal web de un cl
 
 - Nombre
 - Apellido
-- DNI
+- Número de identificación personal
 - Email
 - Contraseña
 - Términos y condiciones de uso
@@ -15,7 +15,7 @@ Cada input deberá tener:
 
 :warning: Consideraciones:
 
-- para el input de DNI nos aseguraremos que solo puedan ingresar números. En esta oportunidad solo se podrán registrar un DNI Argentino por lo que su máximo será de 8 caracteres.
+- para el input del número de identificación personal nos aseguraremos que solo puedan ingresar números.
 - la contraseña debe ser mayor a 8 caracteres pero no puede exceder los 16.
 - se debe colocar un check para aceptar los términos de uso de el portal.
 

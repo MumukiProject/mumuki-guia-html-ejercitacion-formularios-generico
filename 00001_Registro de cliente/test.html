@@ -7,8 +7,8 @@ it("El segundo campo dice Apellido", () => {
   document.querySelectorAll("p")[1].should.have.trimmed.text("Apellido");
 })
 
-it("El tercer campo dice DNI", () => {
-  document.querySelectorAll("p")[2].should.have.trimmed.text("DNI");
+it("El tercer campo dice Número de identificación personal", () => {
+  document.querySelectorAll("p")[2].should.have.trimmed.text("Número de identificación personal");
 })
 
 it("El cuarto campo dice Email", () => {
@@ -24,8 +24,8 @@ it("El campo Nombre es de tipo text", () => {
   document.getElementById("Nombre").type.should.eq("text");
 })
 
-it("El campo DNI es de tipo number", () => {
-  document.getElementById("DNI").type.should.eq("number");
+it("El campo Número de identificación personal es de tipo number", () => {
+  document.getElementById("Número de identificación personal").type.should.eq("number");
 })
 
 it("El campo Contraseña es de tipo password", () => {
