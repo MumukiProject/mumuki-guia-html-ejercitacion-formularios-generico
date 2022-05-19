@@ -1,0 +1,26 @@
+/*<output#*//*#output>*/
+/*<tests#*/
+it("El primer option dice Klatter", () => {
+  document.getElementById("marca").options[0].should.have.trimmed.text("Klatter");
+})
+
+it("El cuarto option dice Shimano", () => {
+  document.getElementById("marca").options[3].should.have.trimmed.text("Shimano");
+})
+
+it("El cuarto option dice Shimano", () => {
+  document.getElementById("marca").options.length.should.eq(7);
+})
+
+it("El primer elemento de la categoría del producto es Mountain Bike", () => {
+  document.getElementById("Mountain Bike").value.should.eq("Mountain Bike");
+})
+
+it("El tercer elemento de la categoría del producto es  Plegable", () => {
+  document.getElementById("Plegable").value.should.eq("Plegable");
+})
+
+
+/*#tests>*/
+/*<options#*/output_ignore_scripts: true
+output_ignore_styles: true/*#options>*/

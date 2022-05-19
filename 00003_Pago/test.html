@@ -1,0 +1,36 @@
+/*<output#*//*#output>*/
+/*<tests#*/it("El primer campo dice Número de tarjeta de crédito", () => {
+  document.getElementsByTagName("label")[0].should.have.trimmed.text("Número de tarjeta de crédito:");
+})
+
+it("El segundo campo dice Nombre completo del titular", () => {
+  document.getElementsByTagName("label")[1].should.have.trimmed.text("Nombre completo del titular:");
+})
+
+it("El cuarto campo dice Año de vencimiento", () => {
+  document.getElementsByTagName("label")[3].should.have.trimmed.text("Año de vencimiento:");
+})
+
+it("El quinto campo dice CCV", () => {
+  document.getElementsByTagName("label")[4].should.have.trimmed.text("CCV:");
+})
+
+it("Hay un botón que dice pagar", () => {
+  document.querySelector("button").should.have.trimmed.text("Pagar");
+})
+
+it("El campo CVV es de tipo password", () => {
+  document.getElementById("ccv").type.should.eq("password");
+})
+
+
+it("El input del año de vencimiento tiene un atributo max", () => {
+  document.getElementById("añoDeVencimiento").should.have.attr("max");
+})
+
+it("El input del año de vencimiento tiene un atributo min", () => {
+  document.getElementById("añoDeVencimiento").should.have.attr("min");
+})
+/*#tests>*/
+/*<options#*/output_ignore_scripts: true
+output_ignore_styles: true/*#options>*/
