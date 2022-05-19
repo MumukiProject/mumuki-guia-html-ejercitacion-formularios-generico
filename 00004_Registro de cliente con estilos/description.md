@@ -2,7 +2,7 @@ Es momento de darle color a nuestros formularios. Utilizaremos el formulario de 
 
 - colocarlo en un contenedor con padding y que esté centrado con respecto a la pantalla;
 - nombre y apellido deben quedar en la misma línea;
-- DNI e Email deben estar por debajo del anterior, siendo que lógicamente el email será más largo, asignaremos más espacio a este;
+- Número de identificación personal e Email deben estar por debajo del anterior, siendo que lógicamente el email será más largo, asignaremos más espacio a este;
 - para la contraseña crearemos otro input que sea repetir contraseña del mismo tipo;
 - en la parte inferior del formulario deben estar el check de "Aceptar términos y condiciones" a la derecha y el botón de registrarse a la derecha;
 - los campos de input deben tener un leve redondeo;
