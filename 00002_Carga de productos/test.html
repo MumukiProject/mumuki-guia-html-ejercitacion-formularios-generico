@@ -1,5 +1,9 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Hay 7 opciones de marcas", () => {
+/*<tests#*/it("Hay un input de texto para el título del producto", () => {
+  document.querySelector("input[type='text").should.exist;
+})
+
+it("Hay 7 opciones de marcas", () => {
   document.getElementById("marca").options.length.should.eq(7);
 })
 
