@@ -35,6 +35,10 @@ it("El séptimo option de marcas dice GT", () => {
   document.getElementById("marca").options[6].should.have.trimmed.text("GT");
 })
 
+it("Hay un input numérico para el rodado", () => {
+  document.querySelector("input[type='number'").should.exist;
+})
+
 it("El primer elemento de la categoría del producto es Mountain Bike", () => {
   document.getElementById("Mountain Bike").value.should.eq("Mountain Bike");
 })
