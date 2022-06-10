@@ -1,15 +1,34 @@
 /*<output#*//*#output>*/
-/*<tests#*/
-it("El primer option dice Klatter", () => {
+/*<tests#*/it("Hay 7 opciones de marcas", () => {
+  document.getElementById("marca").options.length.should.eq(7);
+})
+
+it("El primer option de marcas dice Klatter", () => {
   document.getElementById("marca").options[0].should.have.trimmed.text("Klatter");
 })
 
-it("El cuarto option dice Shimano", () => {
+it("El segundo option de marcas dice Top Mega", () => {
+  document.getElementById("marca").options[1].should.have.trimmed.text("Top Mega");
+})
+
+it("El tercer option de marcas dice Fierce", () => {
+  document.getElementById("marca").options[2].should.have.trimmed.text("Fierce");
+})
+
+it("El cuarto option de marcas dice Shimano", () => {
   document.getElementById("marca").options[3].should.have.trimmed.text("Shimano");
 })
 
-it("El cuarto option dice Shimano", () => {
-  document.getElementById("marca").options.length.should.eq(7);
+it("El quinto option de marcas dice Lamborghini", () => {
+  document.getElementById("marca").options[4].should.have.trimmed.text("Lamborghini");
+})
+
+it("El sexto option de marcas dice Aurora", () => {
+  document.getElementById("marca").options[5].should.have.trimmed.text("Aurora");
+})
+
+it("El séptimo option de marcas dice GT", () => {
+  document.getElementById("marca").options[6].should.have.trimmed.text("GT");
 })
 
 it("El primer elemento de la categoría del producto es Mountain Bike", () => {
