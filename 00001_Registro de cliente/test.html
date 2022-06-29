@@ -1,11 +1,11 @@
 /*<output#*//*#output>*/
 /*<tests#*/function sinMayusculasNiEspacios(texto) {
-  return texto.toLowerCase();
+  return texto.toLowerCase().trim();
 }
 
 it("El primer label dice Nombre", () => {
   let label1 = sinMayusculasNiEspacios(document.querySelectorAll("label")[0].textContent);
-  label1.should.have.trimmed.text("nombre");
+  label1.should.eql("nombre");
 })
 
 it("El segundo label dice Apellido", () => {
