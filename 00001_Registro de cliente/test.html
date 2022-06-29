@@ -1,22 +1,23 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El primer campo dice Nombre", () => {
-  document.querySelectorAll("p")[0].should.have.trimmed.text("Nombre");
+/*<tests#*/it("El primer label dice Nombre", () => {
+  let label1 = document.querySelectorAll("label")[0]
+  label1.should.have.trimmed.text("Nombre", `Se esperaba que el primer label diga Nombre pero fue ${label1}`);
 })
 
-it("El segundo campo dice Apellido", () => {
-  document.querySelectorAll("p")[1].should.have.trimmed.text("Apellido");
+it("El segundo label dice Apellido", () => {
+  document.querySelectorAll("label")[1].should.have.trimmed.text("Apellido");
 })
 
-it("El tercer campo dice Número de identificación personal", () => {
-  document.querySelectorAll("p")[2].should.have.trimmed.text("Número de identificación personal");
+it("El tercer label dice Número de identificación personal", () => {
+  document.querySelectorAll("label")[2].should.have.trimmed.text("Número de identificación personal");
 })
 
-it("El cuarto campo dice Email", () => {
-  document.querySelectorAll("p")[3].should.have.trimmed.text("Email");
+it("El cuarto label dice Email", () => {
+  document.querySelectorAll("label")[3].should.have.trimmed.text("Email");
 })
 
-it("El quinto campo dice Contraseña", () => {
-  document.querySelectorAll("p")[4].should.have.trimmed.text("Contraseña");
+it("El quinto label dice Contraseña", () => {
+  document.querySelectorAll("label")[4].should.have.trimmed.text("Contraseña");
 })
 
 
