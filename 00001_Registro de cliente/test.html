@@ -1,28 +1,37 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El primer label dice Nombre", () => {
-  let label1 = document.querySelectorAll("label")[0]
-  label1.should.have.trimmed.text("Nombre");
+/*<tests#*/function sinMayusculasNiEspacios(texto) {
+  return texto.toLowerCase().trim();
+}
+
+it("El primer label dice Nombre", () => {
+  let label1 = sinMayusculas(document.querySelectorAll("label")[0])
+  label1.should.have.trimmed.text("nombre");
 })
 
 it("El segundo label dice Apellido", () => {
-  document.querySelectorAll("label")[1].should.have.trimmed.text("Apellido");
+  let label2 = sinMayusculas(document.querySelectorAll("label")[1])
+  label2.should.have.trimmed.text("apellido");
 })
 
 it("El tercer label dice Número de identificación personal", () => {
-  document.querySelectorAll("label")[2].should.have.trimmed.text("Número de identificación personal");
+  let label3 = sinMayusculas(document.querySelectorAll("label")[2])
+  label3.should.have.trimmed.text("número de identificación personal");
 })
 
 it("El cuarto label dice Email", () => {
-  document.querySelectorAll("label")[3].should.have.trimmed.text("Email");
+  let label4 = sinMayusculas(document.querySelectorAll("label")[3])
+  label4.should.have.trimmed.text("email");
 })
 
 it("El quinto label dice Contraseña", () => {
-  document.querySelectorAll("label")[4].should.have.trimmed.text("Contraseña");
+  let label5 = sinMayusculas(document.querySelectorAll("label")[4])
+  label5.should.have.trimmed.text("contraseña");
 })
 
 
-it("El campo Nombre es de tipo text", () => {
-  document.getElementById("Nombre").type.should.eq("text");
+it("El input Nombre es de tipo text", () => {
+  let input1 = sinMayusculas(document.getElementById("Nombre"))
+  input1.type.should.eq("text");
 })
 
 it("El campo Número de identificación personal es de tipo number", () => {
