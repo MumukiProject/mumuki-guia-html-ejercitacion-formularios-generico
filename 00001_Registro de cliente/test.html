@@ -9,19 +9,23 @@ it("El primer label dice Nombre", () => {
 })
 
 it("El segundo label dice Apellido", () => {
-  document.querySelectorAll("label")[1].should.have.trimmed.text("Apellido");
+  let label2 = sinMayusculasNiEspacios(document.querySelectorAll("label")[1].textContent)
+  label2.should.eql("apellido", `Se esperaba que el label diga Apellido pero fue ${label2}`);
 })
 
 it("El tercer label dice Número de identificación personal", () => {
-  document.querySelectorAll("label")[2].should.have.trimmed.text("Número de identificación personal");
+  let label3 = sinMayusculasNiEspacios(document.querySelectorAll("label")[2].textContent);
+  label3.should.eql("númerodeidentificaciónpersonal", `Se esperaba que el label diga Número de identificación personal pero fue ${label3}`);
 })
 
 it("El cuarto label dice Email", () => {
-  document.querySelectorAll("label")[3].should.have.trimmed.text("Email");
+  let label4 = sinMayusculasNiEspacios(document.querySelectorAll("label")[3].textContent);
+  label4.should.eql("email", `Se esperaba que el label diga Email pero fue ${label4}`);
 })
 
 it("El quinto label dice Contraseña", () => {
-  document.querySelectorAll("label")[4].should.have.trimmed.text("Contraseña");
+  let label5 = sinMayusculasNiEspacios(document.querySelectorAll("label")[4].textContent);
+  label5.should.eql("contraseña", `Se esperaba que el label diga Contraseña pero fue ${label5}`);
 })
 
 
