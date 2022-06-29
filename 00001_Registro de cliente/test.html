@@ -33,12 +33,12 @@ it("El input Nombre es de tipo text", () => {
   document.querySelectorAll("input")[0].type.should.eq("text");
 })
 
-it("El campo Número de identificación personal es de tipo number", () => {
-  document.getElementById("Número de identificación personal").type.should.eq("number");
+it("El input Número de identificación personal es de tipo number", () => {
+  document.querySelectorAll("input")[2].type.should.eq("number");
 })
 
-it("El campo Contraseña es de tipo password", () => {
-  document.getElementById("Contraseña").type.should.eq("password");
+it("El input Contraseña es de tipo password", () => {
+  document.querySelectorAll("input")[4].type.should.eq("password");
 })
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
