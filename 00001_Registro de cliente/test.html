@@ -1,7 +1,7 @@
 /*<output#*//*#output>*/
 /*<tests#*/it("El primer label dice Nombre", () => {
   let label1 = document.querySelectorAll("label")[0]
-  label1.should.have.trimmed.text("Nombre" `Se esperaba que el primer label diga Nombre pero fue ${label1}`);
+  label1.should.have.trimmed.text("Nombre", `Se esperaba que el primer label diga Nombre pero fue ${label1}`);
 })
 
 it("El segundo label dice Apellido", () => {
