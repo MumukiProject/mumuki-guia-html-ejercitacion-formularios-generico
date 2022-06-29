@@ -30,7 +30,7 @@ it("El quinto label dice Contraseña", () => {
 
 
 it("El input Nombre es de tipo text", () => {
-  document.getElementById("Nombre").type.should.eq("text");
+  document.querySelectorAll("input")[0].type.should.eq("text");
 })
 
 it("El campo Número de identificación personal es de tipo number", () => {
