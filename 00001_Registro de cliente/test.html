@@ -4,7 +4,8 @@
 }
 
 it("El primer label dice Nombre", () => {
-  document.querySelectorAll("label")[0].should.have.trimmed.text("Nombre");
+  let label1 = sinMayusculasNiEspacios(document.querySelectorAll("label")[0].textContent);
+  label1.should.have.trimmed.text("nombre");
 })
 
 it("El segundo label dice Apellido", () => {
