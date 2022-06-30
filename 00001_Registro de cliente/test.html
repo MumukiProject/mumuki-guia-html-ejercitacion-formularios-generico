@@ -17,11 +17,11 @@ it("El segundo label existe y dice Apellido", () => {
   textoLabel2.should.eql("apellido", `Se esperaba que el label diga Apellido pero fue ${textoLabel1}`);
 });
 
-it("El tercer label existe y dice Número de identificación", () => {
+it("El tercer label existe y dice Número de identificación personal", () => {
 	let label3 = document.querySelectorAll("label")[2];
   (label3 === undefined).should.eql(false, "No existe ningún label")
   let textoLabel3 = sinMayusculasNiEspacios(label3.textContent);
-  textoLabel3.should.eql("número de identificación", `Se esperaba que el label diga Número de identificación pero fue ${textoLabel3}`);
+  textoLabel3.should.eql("número de identificación personal", `Se esperaba que el label diga Número de identificación personal pero fue ${textoLabel3}`);
 });
 
 it("El cuarto label existe y dice Email", () => {
@@ -35,7 +35,7 @@ it("El quinto label existe y dice Contraseña", () => {
 	let label5 = document.querySelectorAll("label")[4];
   (label5 === undefined).should.eql(false, "No existe ningún label")
   let textoLabel5 = sinMayusculasNiEspacios(label5.textContent);
-  textoLabel5.should.eql("email", `Se esperaba que el label diga Contraseña pero fue ${textoLabel5}`);
+  textoLabel5.should.eql("contraseña", `Se esperaba que el label diga Contraseña pero fue ${textoLabel5}`);
 });
 
 
