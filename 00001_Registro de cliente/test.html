@@ -14,7 +14,7 @@ it("El segundo label existe y dice Apellido", () => {
 	let label2 = document.querySelectorAll("label")[1];
   (label2 === undefined).should.eql(false, "No existe ningún label")
   let textoLabel2 = sinMayusculasNiEspacios(label2.textContent);
-  textoLabel2.should.eql("apellido", `Se esperaba que el label diga Apellido pero fue ${textoLabel1}`);
+  textoLabel2.should.eql("apellido", `Se esperaba que el label diga Apellido pero fue ${textoLabel2}`);
 });
 
 it("El tercer label existe y dice Número de identificación personal", () => {
