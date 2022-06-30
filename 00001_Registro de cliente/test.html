@@ -45,11 +45,15 @@ it("El input Nombre existe y es de tipo text", () => {
   document.querySelectorAll("input")[0].type.should.eq("text");
 })
 
-it("El input Número de identificación personal es de tipo number", () => {
+it("El input Número de identificación personal existe y es de tipo number", () => {
+  let inputNIP = document.querySelectorAll("input")[2];
+  (inputNIP === undefined).should.eql(false, "No existe ningún input")
   document.querySelectorAll("input")[2].type.should.eq("number");
 })
 
 it("El input Contraseña es de tipo password", () => {
+  let inputPass = document.querySelectorAll("input")[4];
+  (inputPass === undefined).should.eql(false, "No existe ningún input")
   document.querySelectorAll("input")[4].type.should.eq("password");
 })
 /*#tests>*/
