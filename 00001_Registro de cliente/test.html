@@ -40,7 +40,7 @@ it("El quinto label existe y dice Contraseña", () => {
 
 
 it("El input Nombre existe y es de tipo text", () => {
-  let inputNombre = document.querySelectorAll("input")[0]
+  let inputNombre = document.querySelectorAll("input")[0];
   (inputNombre === undefined).should.eql(false, "No existe ningún input")
   document.querySelectorAll("input")[0].type.should.eq("text");
 })
