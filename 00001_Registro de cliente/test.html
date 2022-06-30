@@ -13,10 +13,16 @@
 	}
 });*/
 
-it("El primer label existe", () => {
-  document.getElementsByTagName('label')[0].should.exist;
+it("El primer label dice Nombre", () => {
+	let label1 = document.querySelectorAll("label")[0];
+	if(!label1){
+		(label1 === undefined).should.be(false, "No existe ningún label")
+	} else {
+		let textoLabel1 = sinMayusculasNiEspacios(label1.textContent);
+		textoLabel1.should.eql("nombre", `Se esperaba que el label diga Nombre pero fue ${textoLabel1}`);
+	}
+});
 
-})
 
 
 it("El primer label dice Nombre", () => {
