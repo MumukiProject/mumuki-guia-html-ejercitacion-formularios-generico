@@ -3,7 +3,7 @@
   return texto.toLowerCase().trim();
 }
 
-it("El primer label existe y dice Nombre", () => {
+/*it("El primer label existe y dice Nombre", () => {
 	let label1 = document.querySelectorAll("label")[0];
 	if(!label1){
 		label1.should.exist;
@@ -11,7 +11,12 @@ it("El primer label existe y dice Nombre", () => {
 		let textoLabel1 = sinMayusculasNiEspacios(label1.textContent);
 		textoLabel1.should.eql("nombre", `Se esperaba que el label diga Nombre pero fue ${textoLabel1}`);
 	}
-});
+});*/
+
+it("El primer label existe", () => {
+  document.querySelectorAll('label')[0].should.exist;
+
+})
 
 
 it("El primer label dice Nombre", () => {
