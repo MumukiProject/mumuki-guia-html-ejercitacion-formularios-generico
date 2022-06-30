@@ -12,28 +12,28 @@ it("El primer label existe y dice Nombre", () => {
 
 it("El segundo label existe y dice Apellido", () => {
 	let label2 = document.querySelectorAll("label")[1];
-  (label2 === undefined).should.eql(false, "No existe ningún label")
+  (label2 === undefined).should.eql(false, "No existe el label")
   let textoLabel2 = sinMayusculasNiEspacios(label2.textContent);
   textoLabel2.should.eql("apellido", `Se esperaba que el label diga Apellido pero fue ${textoLabel2}`);
 });
 
 it("El tercer label existe y dice Número de identificación personal", () => {
 	let label3 = document.querySelectorAll("label")[2];
-  (label3 === undefined).should.eql(false, "No existe ningún label")
+  (label3 === undefined).should.eql(false, "No existe el label")
   let textoLabel3 = sinMayusculasNiEspacios(label3.textContent);
   textoLabel3.should.eql("número de identificación personal", `Se esperaba que el label diga Número de identificación personal pero fue ${textoLabel3}`);
 });
 
 it("El cuarto label existe y dice Email", () => {
 	let label4 = document.querySelectorAll("label")[3];
-  (label4 === undefined).should.eql(false, "No existe ningún label")
+  (label4 === undefined).should.eql(false, "No existe el label")
   let textoLabel4 = sinMayusculasNiEspacios(label4.textContent);
   textoLabel4.should.eql("email", `Se esperaba que el label diga Email pero fue ${textoLabel4}`);
 });
 
 it("El quinto label existe y dice Contraseña", () => {
 	let label5 = document.querySelectorAll("label")[4];
-  (label5 === undefined).should.eql(false, "No existe ningún label")
+  (label5 === undefined).should.eql(false, "No existe el label")
   let textoLabel5 = sinMayusculasNiEspacios(label5.textContent);
   textoLabel5.should.eql("contraseña", `Se esperaba que el label diga Contraseña pero fue ${textoLabel5}`);
 });
@@ -47,13 +47,13 @@ it("El input Nombre existe y es de tipo text", () => {
 
 it("El input Número de identificación personal existe y es de tipo number", () => {
   let inputNIP = document.querySelectorAll("input")[2];
-  (inputNIP === undefined).should.eql(false, "No existe ningún input")
+  (inputNIP === undefined).should.eql(false, "No existe el input")
   document.querySelectorAll("input")[2].type.should.eq("number");
 })
 
 it("El input Contraseña es de tipo password", () => {
   let inputPass = document.querySelectorAll("input")[4];
-  (inputPass === undefined).should.eql(false, "No existe ningún input")
+  (inputPass === undefined).should.eql(false, "No existe el input")
   document.querySelectorAll("input")[4].type.should.eq("password");
 })
 /*#tests>*/
