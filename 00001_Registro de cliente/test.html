@@ -10,44 +10,33 @@ it("El primer label existe y dice Nombre", () => {
   textoLabel1.should.eql("nombre", `Se esperaba que el label diga Nombre pero fue ${textoLabel1}`);
 });
 
+it("El segundo label existe y dice Apellido", () => {
+	let label2 = document.querySelectorAll("label")[1];
+  (label2 === undefined).should.eql(false, "No existe ningún label")
+  let textoLabel2 = sinMayusculasNiEspacios(label2.textContent);
+  textoLabel2.should.eql("apellido", `Se esperaba que el label diga Apellido pero fue ${textoLabel1}`);
+});
 
-/*it("El primer label dice Nombre", () => {
-	let label1 = document.querySelectorAll("label")[0];
-	if(!label1){
-		(label1 === undefined).should.eql(false, "No existe ningún label")
-	} else {
-		let textoLabel1 = sinMayusculasNiEspacios(label1.textContent);
-		textoLabel1.should.eql("nombre", `Se esperaba que el label diga Nombre pero fue ${textoLabel1}`);
-	}
-});*/
+it("El tercer label existe y dice Número de identificación", () => {
+	let label3 = document.querySelectorAll("label")[2];
+  (label3 === undefined).should.eql(false, "No existe ningún label")
+  let textoLabel3 = sinMayusculasNiEspacios(label3.textContent);
+  textoLabel3.should.eql("número de identificación", `Se esperaba que el label diga Número de identificación pero fue ${textoLabel3}`);
+});
 
+it("El cuarto label existe y dice Email", () => {
+	let label4 = document.querySelectorAll("label")[3];
+  (label4 === undefined).should.eql(false, "No existe ningún label")
+  let textoLabel4 = sinMayusculasNiEspacios(label4.textContent);
+  textoLabel4.should.eql("email", `Se esperaba que el label diga Email pero fue ${textoLabel4}`);
+});
 
-
-it("El primer label dice Nombre", () => {
-  let label1 = sinMayusculasNiEspacios(document.querySelectorAll("label")[0].textContent);
-  label1.should.eql("nombre", `Se esperaba que el label diga Nombre pero fue ${label1}`);
-
-})
-
-it("El segundo label dice Apellido", () => {
-  let label2 = sinMayusculasNiEspacios(document.querySelectorAll("label")[1].textContent)
-  label2.should.eql("apellido", `Se esperaba que el label diga Apellido pero fue ${label2}`);
-})
-
-it("El tercer label dice Número de identificación personal", () => {
-  let label3 = sinMayusculasNiEspacios(document.querySelectorAll("label")[2].textContent);
-  label3.should.eql("número de identificación personal", `Se esperaba que el label diga Número de identificación personal pero fue ${label3}`);
-})
-
-it("El cuarto label dice Email", () => {
-  let label4 = sinMayusculasNiEspacios(document.querySelectorAll("label")[3].textContent);
-  label4.should.eql("email", `Se esperaba que el label diga Email pero fue ${label4}`);
-})
-
-it("El quinto label dice Contraseña", () => {
-  let label5 = sinMayusculasNiEspacios(document.querySelectorAll("label")[4].textContent);
-  label5.should.eql("contraseña", `Se esperaba que el label diga Contraseña pero fue ${label5}`);
-})
+it("El quinto label existe y dice Contraseña", () => {
+	let label5 = document.querySelectorAll("label")[4];
+  (label5 === undefined).should.eql(false, "No existe ningún label")
+  let textoLabel5 = sinMayusculasNiEspacios(label5.textContent);
+  textoLabel5.should.eql("email", `Se esperaba que el label diga Contraseña pero fue ${textoLabel5}`);
+});
 
 
 it("El input Nombre es de tipo text", () => {
