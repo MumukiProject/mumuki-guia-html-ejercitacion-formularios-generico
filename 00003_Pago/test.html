@@ -20,16 +20,16 @@ it("Hay un botón que dice pagar", () => {
 })
 
 it("El campo CVV es de tipo password", () => {
-  document.getElementById("ccv").type.should.eq("password");
+  document.getElementsByTagName("input")[2]..type.should.eq("password");
 })
 
 
 it("El input del año de vencimiento tiene un atributo max", () => {
-  document.getElementById("añoDeVencimiento").should.have.attr("max");
+  document.getElementsByTagName("input")[3].should.have.attr("max");
 })
 
 it("El input del año de vencimiento tiene un atributo min", () => {
-  document.getElementById("añoDeVencimiento").should.have.attr("min");
+  document.getElementsByTagName("input")[3].should.have.attr("min");
 })
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
